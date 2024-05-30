@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let name = prompt("ENTER YOUR NAME");
+        
+        let middle_number;
+        let middle_Character;
+        if(name.length % 2 == 0){
+            middle_number = (name.length)/2;
+            middle_number--;
+            middle_Character = name.at(middle_number);
+            document.write(middle_Character);
+
+            middle_Character = name.at(middle_number+1);
+            document.write(" , ",middle_Character);
+        }
+
+        else{
+            middle_number = ((name.length)+1)/2;
+            middle_number--;
+            middle_Character = name.at(middle_number);
+            document.write(middle_Character);
+        }
+            
+           
+        
+    </script>
+</head>
+
+</html>
