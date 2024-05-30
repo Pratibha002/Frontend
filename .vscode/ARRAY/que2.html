@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let name = prompt("ENTER YOUR NAME!!").toLowerCase(); 
+        let arr = ["Aman bhaiya", "Akansha", "Ayushi", "Bhanu", "Madhuri", "Pratibha", "Rahul" , "Ruchi"];
+        let check=false;
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i].toLowerCase() === name) {
+              check=true; 
+            }  
+             }// document.write(name, ", you are an unauthorized user!!");
+             if(check==true){ 
+              document.write("Welcome ", name, ", you are an authorized user!!");
+             }
+             else{
+              document.write(name, ", you are an unauthorized user!!");
+             }
+     
+    </script>
+</head>
+<body>
+</body>
+</html>
