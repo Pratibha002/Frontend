@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script>
+    function hello(){
+        let person={
+            firstName : document.getElementById("fname").value, //"Pratibha",
+            lastName : document.getElementById("lname").value, // "Chouhan",
+            age : document.getElementById("age").value, //"21",
+            gender : document.getElementById("gen").value, //"Female",
+            Address : document.getElementById("add").value, // "Indore",
+            College :document.getElementById("clg").value,// "IIPS"
+
+        };
+        for (let key in person ){
+        document.write([key]+ ": " +person[key], "<br>");
+        }
+        // let keys = Object.keys(person);
+        // for(let i =0; i<=keys.length; i++){
+        //     let key =keys[i];
+        //     document.write([key]+ ": " +person[key], "<br>"); 
+        // }
+   }
+//    let a = hello();
+//    document.write(a);
+   </script>
+</head>
+<body>
+   firstName: <input type="text" id="fname"><br><br>
+   lastName: <input type="text" id="lname"><br><br>
+   Age: <input type="number" id="age"><br><br>
+   Gender: <input type="text" id="gen"><br><br>
+   Address: <input type="text" id="add"><br><br>
+   College: <input type="text" id="clg"><br><br>
+  <input type="button" value="signup" onclick="hello()">
+    
+</body>
+</html>
