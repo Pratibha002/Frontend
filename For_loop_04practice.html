@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function reverse(){
+                let a = document.getElementById("id").value;
+                //alert(a);
+          
+                 let b =" ";
+                 for(let i = 0; i < a.length; i++){
+                 b = a.charAt(i)+b
+                }    document.write(b);
+       }
+        </script>
+        <body>
+           Enter Your Name: <input type = "text" id="id" ><br>
+           <input type="button" value="click here" onclick="reverse()" >
+        </body>
+    </head>
+</html>
