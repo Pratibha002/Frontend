@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> name for loop </title>
+<script>
+ function f1(){
+
+//for(var a=0; a<=3; a++){
+   // document.write(name+"<br>");   hoisting of var
+//var name ="rahul";
+var name = document.getElementById("id").value;
+for(var a=0; a<=3; a++){
+    document.write(name+"<br>");
+}
+ }
+</script>
+</head>
+<body>
+
+Name : <input type="text" id="id"><br><br>
+<button onclick="f1()"> Click </button>  
+</body>
+</html>
