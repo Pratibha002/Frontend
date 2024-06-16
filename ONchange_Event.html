@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function calc(){
+let city = document.getElementById("place").value;
+
+
+if(city=="indore"){
+document.write("YOU LIVE IN (M.P)");
+//alert("YOU LIVE IN (M.P)");
+}else if(city=="agra"){
+document.write("YOU LIVE IN (U.P)");
+//alert("YOU LIVE IN (u.P)");
+}else{
+document.write("OUT OF SERVICE AREA");
+//alert("OUT OF SERVICE AREA");
+}
+}
+</script>
+</head>
+<body>
+
+Namne : <input type="text" id="place" onchange="calc()"> <br> 
+
+</body>
+</html>
