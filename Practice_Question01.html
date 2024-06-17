@@ -1,0 +1,31 @@
+<!-- Make a program in which when we enter any string/value in input 
+box we get only alphabets as output and other thing like(number, 
+special character) will be ignore. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function practice(){
+                let a = document.getElementById("tech").value;
+                if (a.length==0) {
+                    document.write("CAN'T TAKE IT 'EMPTY', write something");
+                    
+                }else if(a.length<=20)  {
+                    for (let i=0; i<a.length; i++) {
+                        let c = a.charCodeAt(i);
+                        if ((c>=65 && c<=90) || (c>=97 && c<=122)) {
+                           document.write( a.charAt(i));}
+                         // document.write(b);
+                        } 
+                    
+                }else{
+                    document.write("TOO LONG STRING, You can enter only '20' characters");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        ENTER YOUR NAME : <input type="text" id="tech"><br>
+        <input type="button" value="click here" onmouseover="practice()">
+    </body>
+</html>
