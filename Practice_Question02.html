@@ -1,0 +1,49 @@
+<!-- Make a program in which when we give any name, it accepts it
+and tell you valid name if we enter something in the input box along with
+other things like (numbers and special characters), then an error
+will occur (invalid name). -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function practice(){
+                let a = document.getElementById("tech").value;
+
+               if (a.length==0) {
+                    document.getElementById("p1").innerHTML="**CAN'T TAKE IT 'EMPTY', write something";
+                    
+                }else if(a.length<=20)  {
+                    
+                    for(let i = 0; i<a.length; i++){
+                    let pratibha = a.charCodeAt(i);
+                      if(pratibha>=65 && pratibha<=122){
+                      if(pratibha>=91 && pratibha<=96){
+                      document.getElementById("p1").innerHTML="**Invalid name";
+                       break;
+                      }
+                    document.getElementById("p1").innerHTML="Valid name";   
+                      }else{
+                       document.getElementById("p1").innerHTML="**Invalid name";
+                       break;
+                      }
+                    }         
+                    }
+                    }
+                   
+        </script>
+    </head>
+    <body>
+        ENTER YOUR NAME : <input type="text" id="tech"><br>
+        <p id="p1"></p><br>
+        <input type="button" value="click here" onclick="practice()">
+        
+    </body>
+    
+<!--A_Z = 65-90
+a-z = 97-122-->
+
+</html>
+
+
+
+
