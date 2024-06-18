@@ -1,0 +1,47 @@
+<html>
+<head>
+<script>
+
+let a = prompt("ENTER YOUR NAME:");
+document.write("Hii! " + a + " Let's see your result: <br><br>");
+ 
+function calc(){
+let h = parseInt(document.getElementById("hindi").value);
+let e = parseInt(document.getElementById("english").value);
+let m = parseInt(document.getElementById("maths").value);
+let ss = parseInt(document.getElementById("ssc").value);
+let s = parseInt(document.getElementById("science").value);
+let sum =h+e+m+ss+s;
+let percent = (sum)/5;
+
+
+//document.getElementById("result").value = sum;
+document.getElementById("percent" ).value = percent +"%";
+if(percent>=33){
+    
+    alert(" Congratulations!! " + a); 
+    document.getElementById("result").value = "PASS";
+    
+      
+}else{
+    alert(" Alas! " + a + " do your best next time. "); 
+    document.getElementById("result").value = "FAIL";
+    
+}	
+
+}
+</script>
+
+</head>
+<body>
+
+Hindi Marks : <input type="number" id="hindi"> <br> 
+English  Marks : <input type="number" id="english"><br> 
+Maths  Marks : <input type="number" id="maths"><br> 
+Social Science  Marks : <input type="number" id="ssc"><br> 
+Science  Marks : <input type="number" id="science"><br>
+<input type="button" value="sum" onclick="calc()"> <br> 
+Result : <input type="text" id="result"><br> 
+Percentage : <input type="text" id="percent"><br> 
+</body>
+</html>
