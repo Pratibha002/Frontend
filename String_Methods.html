@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script>
+            let a = "Hello Java Script !!";
+            let b= "THIS IS MY FIRST PROGRAM";
+            //.length method return the length of given string
+            //length method has no paranthesis.
+            document.write(a.length, "<br><br>" );
+            
+            //.charAt() return the alphabet/character at a specified index value in the string.It doesn't accept the
+            //negative value. 
+            document.write(a.charAt(2),"<br><br>");
+            //.charCodeAt() return the specified character unicode value
+            document.write(a.charCodeAt(7),"<br><br>");
+           //.at() return the alphabet/character at a specified index value in the string but it accepts the 
+           //negative value also. 
+            document.write(a.at(9),"<br><br>");
+            // It makes strings look like arrays (but they are not)
+            // If no character is found, [ ] returns undefined, while charAt() returns an empty string.
+           document.write(a[0],"<br><br>");
+           //.slice() extracts a part of a string and returns the extracted part in a new string.
+           //here we'll have to give two parameters(start and end). It accepts -ve value as well
+           document.write(a.slice(0,5),"<br><br>");
+           document.write(a.slice(-9),"<br><br>");
+          // The .substring() extract a part of a string and returns the extracted parts in a new string.The difference is that start and end values less than 0 are treated as 0 in substring()
+           document.write(a.substring(6,10), "<br><br>" );
+          // The .substr() extract a part of a string and returns the extracted parts in a new string.
+           document.write(a.substr(11,19), "<br><br>" );
+           //If we will omit the second parameter, substr() will slice out the rest of the string.
+           document.write(a.substr(5), "<br><br>" );
+          // The .indexOf() method returns the position of the first occurrence of a string/character in a string.
+           document.write(a.indexOf("a"), "<br><br>" );
+           //The lastIndexOf() method returns the index of the last occurrence of a specified text in a string
+           document.write(a.lastIndexOf('a'),"<br><br>");
+           //conveert the string into lowercase
+           document.write(a.toLowerCase(),"<br><br>");
+           //convert the string into uppercase
+           document.write(a.toUpperCase(),"<br><br>");
+           //.concat() concatenate the two strings or can say join the two strings
+           document.write(a.concat(b),"<br><br>");
+          // this method trim the white space 
+          // document.write(a.trim(0,5),"<br><br>");
+          // this .repeat()method repeat the string  
+          document.write(a.repeat(2),"<br><br>");
+          //this.replace() method replace the string
+          document.write(a.replace("Hello","WELCOME"),"<br><br>");    
+          //document.write(a.replaceAll("Hello","WELCOME"),"<br><br>");   
+          document.write(a.split(""),"<br><br>");  
+          
+          document.write(a.search("Script"),"<br><br>");  
+
+          //this .includes() method is case sensitive and it check we have this word in the given string or not
+          document.write(a.includes("script"),"<br><br>"); 
+          document.write(a.includes("Script"),"<br><br>"); 
+
+        // this .startsWith() method check the string is start with the given word or not
+        document.write(a.startsWith("script"),"<br><br>"); 
+        document.write(a.startsWith("Hello"),"<br><br>"); 
+
+        // .endsWith() method is case sensitive checks the last word end with the given word or not
+
+        document.write(a.endsWith("Script !!"),"<br><br>"); 
+        document.write(a.endsWith("Java"),"<br><br>"); 
+          
+
+
+
+
+        </script>
+    </head>
+</html>
