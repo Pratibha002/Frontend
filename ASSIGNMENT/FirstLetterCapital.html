@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+         function f(){
+         //let s ="india is a great country";
+         let s=document.getElementById("id").value;
+        let s1="";
+        for(let i=0; i<s.length; i++ ){
+            if(i==0||s.charAt(i-1)==" "){
+                s1+=s.charAt(i).toUpperCase();
+                
+            }else{
+                s1+=s.charAt(i);
+            }
+            
+        }document.write(s1);
+
+        }
+       
+    </script>
+</head>
+<body>
+    <input type="text" id="id" placeholder="Enter the String " ><br><br>
+    <input type="button" value="click" onmouseover="f()" >
+</body>
+</html>
